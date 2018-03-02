@@ -1,8 +1,8 @@
 const expect = require("chai").expect;
 const program = require("../src/exercise1");
 
-describe(`${program.title}`, function() {
-  it("Function sortProduct should filter product before year 2000", function() {
+describe(`${program.title}`, function () {
+  it("Function sortProduct should filter product before year 2000", function () {
     const input = [
       {
         name: "tomato",
@@ -21,7 +21,7 @@ describe(`${program.title}`, function() {
     expect(program.run(input)).to.be.eql(output);
   });
 
-  it("Function sortProduct should sort by date", function() {
+  it("Function sortProduct should sort by date", function () {
     const input = [
       {
         name: "banana",
@@ -43,7 +43,7 @@ describe(`${program.title}`, function() {
     expect(program.run(input)).to.be.eql(output);
   });
 
-  it("Function sortProduct should group by product", function() {
+  it("Function sortProduct should group by product", function () {
     const input = [
       {
         name: "tomato",
@@ -77,7 +77,7 @@ describe(`${program.title}`, function() {
     expect(program.run(input)).to.be.eql(output);
   });
 
-  it("Function sortProduct should filter product before year 2000, sort by date and group by product", function() {
+  it("Function sortProduct should filter product before year 2000, sort by date and group by product", function () {
     const input = [
       {
         name: "tomato",
