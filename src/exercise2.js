@@ -4,7 +4,7 @@ const yolo = (input) => {
     .map(value => {
       return {
         name: value.name,
-        sex: value.sex === 9 ? 3 : value.sex
+        sex: value.sex === 9 ? 3 : value.sex // si 9 alors 3 ou le sex
       }
     })
     .reduce((acc, value) => {
